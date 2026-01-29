@@ -17,7 +17,7 @@ export default function Home() {
     <div>
       {/* Header */}
       <header className="text-center mb-8 p-5 bg-white rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold text-[#2c3e50] mb-2">Readthrough App</h1>
+        <h1 className="text-3xl font-bold text-slate-700 mb-2">Readthrough App</h1>
         <p className="text-gray-700">
           Enhance your reading comprehension with visual formatting, notes, and bookmarks
         </p>
@@ -27,7 +27,7 @@ export default function Home() {
       <main className="max-w-4xl mx-auto">
         {/* Input Section */}
         <section className="bg-white p-5 mb-5 rounded-lg shadow-md">
-          <h2 id="input-text-label" className="text-2xl text-[#34495e] mb-4">
+          <h2 id="input-text-label" className="text-2xl text-slate-600 mb-4">
             Input Text
           </h2>
           <textarea
@@ -35,12 +35,12 @@ export default function Home() {
             aria-labelledby="input-text-label"
             placeholder="Paste or type your text here..."
             rows={10}
-            className="w-full p-2.5 border border-gray-300 rounded text-sm resize-y focus:outline-blue-500 focus:outline focus:outline-2 focus:outline-offset-2 focus:border-blue-500"
+            className="w-full p-2.5 border border-gray-300 rounded text-sm resize-y focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 focus:border-blue-500"
           />
           <button
             id="process-btn"
             onClick={handleProcessText}
-            className="bg-blue-500 text-white px-5 py-2.5 border-none rounded cursor-pointer text-sm mt-2.5 hover:bg-blue-600 focus:outline-[#2c3e50] focus:outline focus:outline-2 focus:outline-offset-2"
+            className="bg-blue-500 text-white px-5 py-2.5 border-none rounded cursor-pointer text-sm mt-2.5 hover:bg-blue-600 focus:outline-2 focus:outline-offset-2 focus:outline-slate-700"
           >
             Process Text
           </button>
@@ -56,7 +56,7 @@ export default function Home() {
                 </label>
                 <select
                   id="bookmark-select"
-                  className="p-2 border border-gray-300 rounded focus:outline-blue-500 focus:outline focus:outline-2 focus:outline-offset-2 focus:border-blue-500"
+                  className="p-2 border border-gray-300 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 focus:border-blue-500"
                 >
                   <option value="">Jump to bookmark...</option>
                 </select>
@@ -64,7 +64,7 @@ export default function Home() {
               <div className="flex items-center gap-2.5">
                 <button
                   id="copy-all-notes-btn"
-                  className="bg-blue-500 text-white px-5 py-2.5 border-none rounded cursor-pointer text-sm hover:bg-blue-600 focus:outline-[#2c3e50] focus:outline focus:outline-2 focus:outline-offset-2"
+                  className="bg-blue-500 text-white px-5 py-2.5 border-none rounded cursor-pointer text-sm hover:bg-blue-600 focus:outline-2 focus:outline-offset-2 focus:outline-slate-700"
                 >
                   📋 Copy All Notes
                 </button>
@@ -81,7 +81,7 @@ export default function Home() {
         {/* Output Section */}
         {showOutput && (
           <section className="bg-white p-5 mb-5 rounded-lg shadow-md">
-            <h2 className="text-2xl text-[#34495e] mb-4">Reading View</h2>
+            <h2 className="text-2xl text-slate-600 mb-4">Reading View</h2>
             <div id="paragraphs-container"></div>
           </section>
         )}

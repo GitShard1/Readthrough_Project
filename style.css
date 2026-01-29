@@ -15,6 +15,10 @@ body {
     padding: 20px;
 }
 
+.hidden {
+    display: none;
+}
+
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -56,6 +60,12 @@ textarea {
     resize: vertical;
 }
 
+textarea:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+    border-color: #3498db;
+}
+
 button {
     background-color: #3498db;
     color: white;
@@ -69,6 +79,11 @@ button {
 
 button:hover {
     background-color: #2980b9;
+}
+
+button:focus {
+    outline: 2px solid #2c3e50;
+    outline-offset: 2px;
 }
 
 .controls-container {
@@ -88,6 +103,12 @@ select {
     padding: 8px;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+select:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+    border-color: #3498db;
 }
 
 footer {

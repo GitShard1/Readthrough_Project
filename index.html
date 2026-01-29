@@ -14,12 +14,12 @@
 
     <main>
         <section id="input-section">
-            <h2>Input Text</h2>
-            <textarea id="text-input" placeholder="Paste or type your text here..." rows="10"></textarea>
+            <h2 id="input-text-label">Input Text</h2>
+            <textarea id="text-input" aria-labelledby="input-text-label" placeholder="Paste or type your text here..." rows="10"></textarea>
             <button id="process-btn">Process Text</button>
         </section>
 
-        <section id="controls-section" style="display: none;">
+        <section id="controls-section" class="hidden">
             <div class="controls-container">
                 <div class="control-group">
                     <label for="bookmark-select">Bookmarks:</label>
@@ -28,22 +28,22 @@
                     </select>
                 </div>
                 <div class="control-group">
-                    <button id="copy-all-notes-btn">📋 Copy All Notes</button>
+                    <button id="copy-all-notes-btn" aria-label="Copy all notes to clipboard">📋 Copy All Notes</button>
                 </div>
                 <div class="control-group">
-                    <span id="highlight-status">Press Ctrl+H to toggle highlight mode</span>
+                    <span id="highlight-status">Press Ctrl+H (Cmd+H on Mac) to toggle highlight mode</span>
                 </div>
             </div>
         </section>
 
-        <section id="output-section" style="display: none;">
+        <section id="output-section" class="hidden">
             <h2>Reading View</h2>
             <div id="paragraphs-container"></div>
         </section>
     </main>
 
     <footer>
-        <p>Tip: Use Ctrl+H to enable highlight mode and mark important text</p>
+        <p>Tip: Use Ctrl+H (Cmd+H on Mac) to enable highlight mode and mark important text</p>
     </footer>
 
     <script src="script.js"></script>

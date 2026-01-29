@@ -39,6 +39,7 @@ export default function Home() {
           />
           <button
             id="process-btn"
+            type="button"
             onClick={handleProcessText}
             className="bg-blue-500 text-white px-5 py-2.5 border-none rounded cursor-pointer text-sm mt-2.5 hover:bg-blue-600 focus:outline-2 focus:outline-offset-2 focus:outline-slate-700"
           >
@@ -56,6 +57,7 @@ export default function Home() {
                 </label>
                 <select
                   id="bookmark-select"
+                  aria-label="Select a bookmark"
                   className="p-2 border border-gray-300 rounded focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 focus:border-blue-500"
                 >
                   <option value="">Jump to bookmark...</option>
@@ -64,6 +66,7 @@ export default function Home() {
               <div className="flex items-center gap-2.5">
                 <button
                   id="copy-all-notes-btn"
+                  type="button"
                   className="bg-blue-500 text-white px-5 py-2.5 border-none rounded cursor-pointer text-sm hover:bg-blue-600 focus:outline-2 focus:outline-offset-2 focus:outline-slate-700"
                 >
                   📋 Copy All Notes

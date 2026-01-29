@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readthrough App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Readthrough App</h1>
+        <p>Enhance your reading comprehension with visual formatting, notes, and bookmarks</p>
+    </header>
+
+    <main>
+        <section id="input-section">
+            <h2>Input Text</h2>
+            <textarea id="text-input" placeholder="Paste or type your text here..." rows="10"></textarea>
+            <button id="process-btn">Process Text</button>
+        </section>
+
+        <section id="controls-section" style="display: none;">
+            <div class="controls-container">
+                <div class="control-group">
+                    <label for="bookmark-select">Bookmarks:</label>
+                    <select id="bookmark-select">
+                        <option value="">Jump to bookmark...</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <button id="copy-all-notes-btn">📋 Copy All Notes</button>
+                </div>
+                <div class="control-group">
+                    <span id="highlight-status">Press Ctrl+H to toggle highlight mode</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="output-section" style="display: none;">
+            <h2>Reading View</h2>
+            <div id="paragraphs-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tip: Use Ctrl+H to enable highlight mode and mark important text</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

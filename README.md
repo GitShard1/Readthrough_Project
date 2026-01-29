@@ -1,2 +1,38 @@
-# Readthrough_Project
-temp description
+# Readthrough - Enhanced Reading Experience
+
+A web application that enhances reading comprehension through visual formatting, note-taking, and bookmarking features.
+
+## Features
+
+- **Alternating Bold Text**: Every other paragraph is automatically bolded for improved visual scanning
+- **Paragraph Numbering**: Each paragraph is clearly labeled with a sequential number
+- **Side Notes**: Write notes directly next to each paragraph for easy reference
+- **Bookmarking**: Mark important paragraphs and quickly jump back to them
+- **Highlighter Hotkey**: Press `Ctrl+H` to toggle highlight mode and mark important text
+- **Copy Notes**: Copy individual paragraph notes or all notes at once to your clipboard
+
+## How to Use
+
+1. Open `index.html` in a web browser
+2. Paste or type your text in the input area
+3. Click "Process Text" to convert your text into the enhanced reading format
+4. Use the features:
+   - Add notes in the text areas next to each paragraph
+   - Click "📌 Bookmark Here" to bookmark the currently visible paragraph
+   - Press `Ctrl+H` to enable highlighting, then select text to highlight it
+   - Use "📋 Copy All Notes" to copy all your notes
+   - Use "Copy Note" button on individual paragraphs to copy specific notes
+   - Navigate bookmarks using the dropdown menu
+
+## Files
+
+- `index.html` - Main HTML structure
+- `style.css` - Styling and visual design
+- `script.js` - Application logic and interactivity
+
+## Technical Details
+
+- Pure vanilla JavaScript (no dependencies)
+- Responsive design for mobile and desktop
+- Local storage of notes and bookmarks during the session
+- Keyboard shortcuts for improved productivity
